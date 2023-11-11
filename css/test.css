@@ -1,11 +1,20 @@
-/* * {
+* {
   box-sizing: border-box;
-} */
+}
 
-.box {
-  display: inline;
-  box-sizing: border-box;
-  width: 100px;
+.flex-container {
+  display: flex;
+  /* flex-direction: column; */
+  /* flex-direction: row-reverse; */
+  /* justify-content: center; вирівнювання по центру */
+  justify-content: center;
+  /* align-items: center; */
+  /* flex-wrap: wrap; */
+}
+
+.item {
+  /* width: 100px; */
+  flex-basis: 100px;
   height: 100px;
   background-color: aqua;
   padding: 10px;
@@ -14,6 +23,23 @@
   /* padding: 16px 42px 16px 42px; */
 }
 
-.box:nth-child(2n+1) {
+.item:nth-child(2) {
+  order: 1;
+  align-self: end;
+  flex-basis: 50px;
+  height: 50px;
   background-color: gold;
 }
+
+.item:nth-child(3) {
+  order: 2;
+  flex-basis: 80px;
+  height: 80px;
+  background-color: red;
+  flex-flow: column;
+}
+
+/* .item:last-child {
+  width: 70px;
+  height: 70px;
+} */
