@@ -5,15 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Сучасна пекарня</title>
-    <!-- Fonts -->
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,900;1,600&display=swap"
-      rel="stylesheet"
-    /> -->
     <!-- Styles -->
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <header class="header">
@@ -46,17 +39,17 @@
             <span class="accent">Сучасна</span> пекарня
           </h1>
         </div>
-        <section class="advantages-section">
-          <div class="container">
-            <h2 class="visualy-hidden">Наші певаги</h2>
-            <ul class="advantages-list">
-              <li class="advantages-item">Великий попит на ринку</li>
-              <li class="advantages-item">Доступні за бюджетом формати</li>
-              <li class="advantages-item">Досвідчена управлінська команда</li>
-              <li class="advantages-item">Контакти</li>
-            </ul>
-          </div>
-        </section>
+      </section>
+      <section class="advantages-section">
+        <div class="container">
+          <h2 class="visualy-hidden">Наші певаги</h2>
+          <ul class="advantages-list">
+            <li class="advantages-item">Великий попит на ринку</li>
+            <li class="advantages-item">Доступні за бюджетом формати</li>
+            <li class="advantages-item">Досвідчена управлінська команда</li>
+            <li class="advantages-item">Контакти</li>
+          </ul>
+        </div>
       </section>
       <section class="traditions-section section" id="tradition-section">
         <div class="container">
@@ -146,6 +139,7 @@
             <ul class="formats-list">
               <li class="formats-item">
                 <article class="format-card">
+                  <img class="format-image" src="./images/walrus-format.jpg" alt="Walrus format"/>
                   <h3 class="formats-title" lang="en">Walrus</h3>
                   <div class="formats-text">
                     <p>Площа: до 120 м2</p>
@@ -157,6 +151,7 @@
               </li>
               <li class="formats-item">
                 <article class="format-card">
+                  <img class="format-image" src="./images/horseshoe-format.jpg" alt="Horseshoe format">
                   <h3 class="formats-title" lang="en">Horseshoe</h3>
                   <div class="formats-text">
                     <p>Площа: до 25 м2</p>
@@ -171,6 +166,7 @@
               </li>
               <li class="formats-item">
                 <article class="format-card">
+                  <img class="format-image" src="./images/handlebar-format.jpg" alt="Hendlebar format">
                   <h3 class="formats-title" lang="en">Handlebar</h3>
                   <div class="formats-text">
                     <p>Площа: до 15 м2</p>
@@ -181,7 +177,7 @@
                 </article>
               </li>
             </ul>
-            <button class="carousel-button" type="button">
+            <button class="carousel-button next" type="button">
               <svg class="carousel-arrow" width="16" height="16">
                 <use href="./images/icons.svg#icon-arrow"></use>
               </svg>
@@ -198,6 +194,26 @@
               </h2>
               <p>Заповни форму, щоб ми звʼязались з тобою!</p>
               <!-- form -->
+              <form name="contact-form" autocomplete="off" novalidate>
+
+          <div class="form-field">
+            <label class="form-label visualy-hidden" for="user-name">Ім'я</label>
+            <input class="form-input" type="text" id="user-name" name="user-name" placeholder="Ім'я">
+          </div>
+
+          <div class="form-field">
+            <label class="form-label visualy-hidden" for="user-tel">Телефон</label>
+            <input class="form-input" type="tel" id="user-tel" name="user-tel" placeholder="Телефон">
+          </div>
+
+          <div class="form-field">
+            <label class="form-label visualy-hidden" for="user-email">Електронна адреса</label for="">
+            <input class="form-input" type="email" id="user-email" name="user-email" placeholder="Електронна адреса">
+          </div>
+
+          <button class="form-button button" type="submit">Замовити дзвінок</button>
+          <p class="form-terms">Натискаючи на кнопку я погоджуюсь з <a class="form-terns-link" href="#">політикою конфіденційності</a></p>
+        </form>
             </div>
             <iframe
               class="contact-map"
@@ -281,6 +297,28 @@
     <div class="backdrop">
       <div class="modal">
         <button class="modal-btn-close" type="button">Close</button>
+        <h2>Замовити дзвінок</h2>
+        <p>Залишіть заявку та наш спеціаліст зв'яжеться з Вами!</p>
+        <form name="modal-form" autocomplete="off">
+
+          <div class="form-field">
+            <label class="form-label visualy-hidden" for="user-name">Ім'я</label>
+            <input class="form-input" type="text" id="user-name" name="user-name" placeholder="Ім'я" required>
+          </div>
+
+          <div class="form-field">
+            <label class="form-label visualy-hidden" for="user-tel">Телефон</label>
+            <input class="form-input" type="tel" id="user-tel" name="user-tel" placeholder="Телефон" required pattern="^\+[0-9]{12}">
+          </div>
+
+          <div class="form-field">
+            <label class="form-label visualy-hidden" for="user-email">Електронна адреса</label for="">
+            <input class="form-input" type="email" id="user-email" name="user-email" placeholder="Електронна адреса" required>
+          </div>
+
+          <button class="form-button button" type="submit">Замовити дзвінок</button>
+          <p class="form-terms">Натискаючи на кнопку я погоджуюсь з <a class="form-terns-link" href="#">політикою конфіденційності</a></p>
+        </form>
       </div>
     </div>
 
