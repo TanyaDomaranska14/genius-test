@@ -9,7 +9,7 @@
   transition: transform 0.3s;
 
   &.is-open {
-      transform: translateX(0);
+    transform: translateX(0);
   }
 
   &__btn-close {

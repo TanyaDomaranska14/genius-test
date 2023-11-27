@@ -13,11 +13,11 @@
     var(--color-primary-dark) 100%
   );
   border-radius: 16 px;
-  transition: transform 0.3s;
+  // transition: transform 0.3s;
 
-  &:hover {
-    transform: scale(1.05);
-  }
+  // &:hover {
+  //   transform: scale(1.05);
+  // }
 
   &__image {
     position: absolute;

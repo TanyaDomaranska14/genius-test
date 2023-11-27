@@ -5,19 +5,18 @@
 @import './utils/utils';
 @import './utils/mixins';
 
-
 @import './components/buttons';
 @import './components/carousel-buttons';
 @import './components/chef-card';
 @import './components/input';
 @import './components/format-card';
 @import './components/links';
+@import './components/pagination';
 
-@import './layouts/address-section';
 @import './layouts/advantages-section';
 @import './layouts/container';
 @import './layouts/chefs-section';
-@import './layouts/contacts-section';
+@import './layouts/contact-section';
 @import './layouts/footer';
 @import './layouts/formats-section';
 @import './layouts/form-terms';
